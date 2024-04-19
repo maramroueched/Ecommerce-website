@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >inscription </title>
+    <link href="beautyproducts.css" rel="stylesheet">
+</head>
+<body style="background-color: rgb(251, 245, 246);">
+    <header>
+        <a href="special beauty.html">
+            <img src="logo.jpg " class="logo-header">
+        </a>
+        <a href="special beauty.html"><h1>Special Beauty</h1> </a>
+        <div class="user-icons">
+            <a href="liste de commission.html"><img src="bag.png" class="user"></a>
+            <a href="inscription.html"><img src="user.jpg" class="user"></a>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <form action="php/insertion.php" method="POST">
+            <fieldset>
+                <legend> <h2>Create Account</h2> </legend>
+                <table>
+                    <tr>
+                        <td><label for="nom">First name</label></td>
+                        <td><input class="input"type="texte" name="First_name"required="required"/></td>
+                    </tr>    
+                        <td><label for="prenom">Last name</label></td>
+                        <td><input class="input"type="texte" name="Last_name"required="required"></td>
+                    </tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input class="input"type="email"name="Email"required="required"></td>
+                    </tr>    
+                        <td><label for="password">Password</label></td>
+                        <td><input class="input"type="password" name="Password"required="required"></td>
+                    </tr> 
+                    </tr>    
+                        <td><label for="phone">Phone Number</label></td>
+                        <td><input class="input"type="tel" name="Phone_Number"required="required"></td>
+                    </tr>  
+                    <tr>
+                        <td><label for="date">Birth Date</label></td>
+                        <td><input class="input" type="date" name="date"required="required"></td>
+                    </tr>
+                    <tr>
+                        <td><label for=""> Living Place</label></td>
+                         <td>
+                            <select name="ville" id="option">
+                            <option value="ariana">ariana</option>  
+                            <option value="beja">beja</option>  
+                            <option value="bizerte">bizerte</option>  
+                            <option value="jendouba">jendouba</option>  
+                            <option value="sfax">sfax</option>   
+                            <option value="tunis"selected> tunis</option> 
+                            <option value="tunis"> Gabes</option> 
+                            <option value="tunis"> Sousse</option> 
+                            <option value="tunis"> Mahdia</option> 
+                            <option value="tunis"> Gafsa</option> 
+                            </select>
+                         </td></tr>
+                    <tr> 
+                        <tr>
+                            <td><label for="address">Adress: (street,residence)</label></td>
+                            <td><input class="input"type="texte" name="Adress"required="required"/></td>
+                        </tr>  
+                        <tr>
+                            <td><label for="Postal">Code Postal:</label></td>
+                            <td><input class="input"type="Postal" name="Adress"required="required"/></td>
+                        </tr>  
+               </table>
+            </fieldset>
+            </br>
+            <input type="submit" value="submit" class="b" name="submit_log"/>
+            <input type="reset"value ="reset" class="b">
+            <br>
+            <br>
+            <h3> Already have an account?<a href="login here.html">LOGIN HERE.</a></h3>
+        </form>
+    </center>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <br>
+        <br>
+        <h5><a href="inscription.html">SIGN UP</a> FOR EMAIL AND/OR TEXTS FOR THE LATEST UPDATES, SPECIAL OFFERS, AND MORE.</h5> 
+        <p>By entering your email address and clicking "Join Us" <br>you agree to receive marketing email messages from special Beauty<br> at the email address provided. Unsubscribe at any time. <br>View our Privacy Policy & Terms of Service.</p><br>
+        <form action="special beauty.html" method="post" name="form1">
+            <center>
+                <table>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input class="input" type="email" name="email"></td>
+                    </tr>
+                  </table> 
+            </center>
+            <input type="submit" value="join us"class="b"/>
+        </form>
+         <div class="allcontent">
+            <div class="content">
+                <h4>
+                    SHOP<br>
+                    <a href="face.html">Face</a><br>
+                    <a href="eyes.html">Eye</a><br>
+                    <a href="lip.html">Lip</a><br>
+                    <a href="perfume.html">Perfume</a>
+                  </h4> 
+            </div>
+            <div class="content">
+                <h4>
+                    CUSTOMER SERVICE<br>
+                    <a href="contact us.html">Contact Us</a>
+                    <p>+216-99314002</p>
+                    <p>Manar 1,Tunis-2092</p>
+                    <p>Roichedmaram600@gmail.com</p>
+                    <br>
+                    <br>
+                    <p> <img src="payment.png"></p>
+                </h4>
+            </div>
+            <div class="content">
+                <h4>
+                    OUR LOCATIONS <br>
+                    <p>Tunis</p>
+                    <p>Nabeul</p>
+                    <p>sfax</p> 
+                    <p>mahdia</p>
+                </h4> 
+            </div>
+         </div>
+          <br>
+          <br>  
+          <h5>Created by MARAM ROUECHED -  2023 Special Beauty All rights preserved. </h5>
+          <img src="logo.jpg " class="logo-footer">
+          <br>
+          <br>
+    </footer>
+</body>
+</html>

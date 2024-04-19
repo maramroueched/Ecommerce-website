@@ -1,0 +1,198 @@
+c<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="beautyproducts.css">
+</head>
+<body>
+    <header>
+        <a href="special beauty.html">
+            <img src="logo.jpg " class="logo-header">
+        </a>
+        <a href="special beauty.html"><h1>Special Beauty</h1> </a>
+        <div class="user-icons">
+            <a href="liste de commission.html"><img src="bag.png" class="user"></a>
+            <a href="inscription.html"><img src="user.jpg" class="user"></a>
+        </div> 
+    </header>
+    <br>
+    <br>
+    <br>
+    <table id="table-for-acceuil-liste">
+        <tr><td><h3><a href="special beauty.html">Welcome</a></h3></td><td><h3><a href="lip.html">Lips</a></h3></td><td><h3><a href="eye.html">Eyes</a></h3></td><td><h3><a href="face.html">Face</a></h3></td></td><td><h3><a href="perfume.html">Perfume</a></h3></td></tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <link href="site marchand.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Shopping bag</title>
+    
+    </head>
+    <center>
+        <body id="background-image">
+        <h1>Your Bag</h1>
+        <select multiple id="course" onclick="ajout()" size="11" style="border-color: rgb(132, 29, 46);background-color: rgb(251, 245, 246);">
+            <option value="Dior Lipstick">Dior    Lipstick</option>
+            <option value="Gloss">Gloss</option>
+            <option value="Palette">Palette</option>
+            <option value="Mascara">Mascara</option>
+            <option value="Brush">Brush</option>
+            <option value="Face Spray">Face Spray</option>
+            <option value="Fondation">Fondation</option>
+            <option value="Perfume">Perfume</option>
+            <option value="Body lotion">Body lotion</option>
+            <option value="Concealer">Concealer</option>
+            <option value="Liquid blush">Liquid blush</option>
+        </select>
+        <br>
+        <br>
+        <h3>Choose what you want to buy</h3>
+        <ul id="listecommissions"></ul>
+        <br>
+        <label><h4>Final Price :</h4></label>
+        <input type="number" id="prix" min="0" value="0" readonly><br>
+        <br>
+        <button onclick="Supprimer()" class="butt">Delete</button>
+       <a href="inscription.html"><submit class="butt" >Buy</submit></a> 
+        <script>
+            function ajout() {
+                var liste = document.getElementById("listecommissions");
+                var selectedOptions = document.getElementById("course").selectedOptions;
+                for (var i = 0; i < selectedOptions.length; i++) {
+                    var texte = selectedOptions[i].value;
+                    var nouveauli = document.createElement("li");
+                    nouveauli.appendChild(document.createTextNode(texte));
+                    liste.appendChild(nouveauli);
+                    calculprix(texte, "ajout");
+                }
+            }
+        
+            function Supprimer() {
+                var liste = document.getElementById("listecommissions");
+                var dernier = liste.lastElementChild;
+                liste.removeChild(dernier);
+                calculprix(dernier.textContent, "supression");
+            }
+        
+            function calculprix(texte, signe) {
+                var prix;
+                var prixtotal = document.getElementById("prix").value;
+                switch (texte) {
+                    case "Dior Lipstick":
+                        prix = 75;
+                        break;
+                    case "Gloss":
+                        prix = 55;
+                        break;
+                    case "Palette":
+                        prix = 75;
+                        break;
+                    case "Mascara":
+                        prix = 75;
+                        break;
+                    case "Brush":
+                        prix = 25;
+                        break;
+                    case "Face Spray":
+                        prix = 60;
+                        break;   
+                    case "Fondation":
+                        prix = 85;
+                        break; 
+                    case "Highlighter":
+                        prix = 64;
+                        break;    
+                        case "Perfume":
+                        prix = 80;
+                        break;
+                    case "Body lotion":
+                        prix = 140;
+                        break;   
+                    case "Concealer":
+                        prix = 65;
+                        break; 
+                    case "Liquid blush":
+                        prix = 66;
+                        break;                                      
+                }
+                if (signe == "ajout")
+                    prixtotal = Number(prixtotal) + prix;
+                else
+                    prixtotal = Number(prixtotal) - prix;
+        
+                document.getElementById("prix").value = prixtotal;
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</center>
+<footer>
+    <br>
+    <br>
+    <h5><a href="inscription.html">SIGN UP</a> FOR EMAIL AND/OR TEXTS FOR THE LATEST UPDATES, SPECIAL OFFERS, AND MORE.</h5> 
+    <p>By entering your email address and clicking "Join Us" <br>you agree to receive marketing email messages from special Beauty<br> at the email address provided. Unsubscribe at any time. <br>View our Privacy Policy & Terms of Service.</p><br>
+    <form action="special beauty.html" method="post" name="form1">
+        <center>
+            <table>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input class="input" type="email" name="email"></td>
+                </tr>
+              </table> 
+        </center>
+        <input type="submit" value="join us"class="b" >
+    </form>
+    <br>
+     <div class="allcontent">
+        <div class="content">
+            <h4>
+                SHOP<br>
+                <a href="face.html">Face</a><br>
+                <a href="eyes.html">Eye</a><br>
+                <a href="lip.html">Lip</a><br>
+                <a href="perfume.html">Perfume</a>
+              </h4> 
+        </div>
+        <div class="content">
+            <h4>
+                CUSTOMER SERVICE<br>
+                <a href="contact us.html">Contact Us</a>
+                <p>+216-99314002</p>
+                <p>Manar 1,Tunis-2092</p>
+                <p>Roichedmaram600@gmail.com</p>
+                <br>
+                <br>
+                <p> <img src="payment.png"></p>
+            </h4>
+        </div>
+        <div class="content">
+            <h4>
+                OUR LOCATIONS <br>
+                <p>Tunis</p>
+                <p>Nabeul</p>
+                <p>sfax</p> 
+                <p>mahdia</p>
+            </h4> 
+        </div>
+     </div>
+      <br>
+      <br>  
+      <h5>Created by MARAM ROUECHED -  2023 Special Beauty All rights preserved. </h5>
+      <img src="logo.jpg " class="logo-footer">
+      <br>
+      <br>
+</footer>
+</html>
